@@ -46,7 +46,6 @@ st.markdown('Maybe you want to use your own API for the prediction, not the one 
 
 ## Finally, we can display the prediction to the user
 '''
-
 #1.
 date = st.date_input("Pickup date")
 time = st.time_input("Pickup time")
@@ -67,6 +66,7 @@ params = {
     'passenger_count': passenger_count
 }
 
+st.map()
 #3.
 if st.button('Get Fare Prediction'):
     url = 'https://taxifare.lewagon.ai/predict'
